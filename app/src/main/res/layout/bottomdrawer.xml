@@ -1,0 +1,60 @@
+<LinearLayout android:layout_height="300dp"
+    android:layout_width="match_parent"
+    android:elevation="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/primaeywhite"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="520dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:gravity="center|bottom"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:translationY="-26dp"
+            android:id="@+id/clsdrw"
+            android:background="@drawable/round_button">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="18dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/name"
+        android:layout_marginBottom="22dp"
+        android:hint="Enter name"
+        android:textColor="@color/black"
+        android:backgroundTint="#D1CFCF"
+        android:textColorHint="@color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textColorHint="@color/black"
+        android:id="@+id/disid"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_height="45dp"
+        android:backgroundTint="#D1CFCF"
+        android:hint="Enter discord user id"
+        />
+    <Button
+        android:id="@+id/submituser"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#6e67ed"
+        android:text="Submit"
+        />
+    </LinearLayout>
+</LinearLayout>

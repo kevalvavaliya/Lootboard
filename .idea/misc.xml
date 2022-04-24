@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/project/LootBoard/app/src/main/res/drawable/cardback.xml" value="0.236" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.236" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/drawable/round_button.xml" value="0.236" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/drawable/textviewround.xml" value="0.192" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/drawable/toolbarborder.xml" value="0.236" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/drawable/toolbarborderblack.xml" value="0.192" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/activity_homescreen.xml" value="0.25" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/activity_userboard.xml" value="0.3609375" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/bottomdrawer.xml" value="0.33" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/fragment_home_fragment.xml" value="0.3609375" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/fragment_user.xml" value="0.3609375" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/fragment_userfragment.xml" value="0.3609375" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/griditem.xml" value="0.3609375" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/round_button.xml" value="0.3609375" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/textviewround.xml" value="0.3609375" />
+        <entry key="..\:/project/LootBoard/app/src/main/res/layout/toolbar.xml" value="0.3609375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
