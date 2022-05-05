@@ -15,22 +15,34 @@
             android:weightSum="3"
             android:padding="8dp"
             android:orientation="vertical">
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:paddingTop="4dp"
                 android:layout_weight="1.6"
                 >
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
                 android:src="@drawable/moneybag"
 
                 />
-
+dp            <LinearLayout
+                android:layout_alignParentEnd="true"
+                android:padding="4dp"
+                android:id="@+id/deletebtn"
+                android:backgroundTint="#eeeee4"
+                android:background="@drawable/round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_delete_24"/>
             </LinearLayout>
+            </RelativeLayout>
             <TextView
                 android:id="@+id/name_view"
                 android:layout_width="match_parent"

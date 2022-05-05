@@ -16,6 +16,7 @@
             android:layout_gravity="center"
             android:translationY="-26dp"
             android:id="@+id/clsdrw"
+            android:backgroundTint="#6e67ed"
             android:background="@drawable/round_button">
             <ImageView
                 android:layout_width="40dp"

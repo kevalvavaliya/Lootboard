@@ -154,6 +154,7 @@ public class userFragment extends Fragment {
                     if(response.body().size()!=0) {
                         ArrayList<dataModel> l = response.body();
                         gridView.setAdapter(new gridadapter(getContext(), l));
+
                     }
                 } else {
                     progressDialog.dismiss();

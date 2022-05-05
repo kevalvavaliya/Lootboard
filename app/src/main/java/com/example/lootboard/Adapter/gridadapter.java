@@ -9,9 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.lootboard.DB.DbHelper;
 import com.example.lootboard.R;
 import com.example.lootboard.data.dataModel;
 
@@ -20,6 +23,7 @@ import java.util.ArrayList;
 public class gridadapter extends BaseAdapter {
     Context context;
     ArrayList<dataModel> list;
+    DbHelper mydb;
     ArrayList<String> colors =new ArrayList<String>(){
         {
             add("#ff9700");
@@ -31,6 +35,7 @@ public class gridadapter extends BaseAdapter {
     public gridadapter(Context context,ArrayList<dataModel> list){
         this.context = context;
         this.list = list;
+        mydb = new DbHelper(context);
     }
 
     @Override
@@ -56,7 +61,9 @@ public class gridadapter extends BaseAdapter {
 
         int index = (int)(Math.random() * colors.size());
         LinearLayout usercards;
+        LinearLayout delbtn;
         usercards = view.findViewById(R.id.usercard);
+        delbtn = view.findViewById(R.id.deletebtn);
         usercards.getBackground().setTint(Color.parseColor(colors.get(index)));
 
 
@@ -65,6 +72,14 @@ public class gridadapter extends BaseAdapter {
         nameview = view.findViewById(R.id.name_view);
         tokenview.setText(list.get(i).getPoints()+" Tokens \uD83D\uDCB0");
         nameview.setText(list.get(i).getName());
+        delbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mydb.deleteUser(list.get(i).getUserID());
+                Toast.makeText(context,list.get(i).getName() + " removed",Toast.LENGTH_SHORT).show();
+                list.remove(i);
+                notifyDataSetChanged();}
+        });
 
         return  view;
 

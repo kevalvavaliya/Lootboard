@@ -102,12 +102,13 @@ public class DbHelper extends SQLiteOpenHelper {
 //        return true;
 //    }
 //
-//    public Integer deleteContact (Integer id) {
-//        SQLiteDatabase db = this.getWritableDatabase();
-//        return db.delete("contacts",
-//                "id = ? ",
-//                new String[] { Integer.toString(id) });
-//    }
+    public Integer deleteUser (String id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete("users",
+                "discordid = ? ",
+                new String[] {id});
+
+    }
 
 //    public ArrayList<String> getAllCotacts() {
 //        ArrayList<String> array_list = new ArrayList<String>();
